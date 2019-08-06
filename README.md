@@ -16,7 +16,7 @@
 
 ## 2. Iniciando o Backend
 
-### Instalando o json-server
+### Instalando o json-server - Adicionado para a API Backend
 
 `npm install -g json-server`
 
