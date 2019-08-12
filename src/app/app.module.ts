@@ -3,6 +3,7 @@ import { NgModule, LOCALE_ID } from "@angular/core";
 import { HttpModule } from "@angular/http";
 import { RouterModule } from "@angular/router";
 import { ROUTES } from "./app.routes";
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
@@ -17,7 +18,7 @@ import { ShoppingCartComponent } from "./shopping-cart/shopping-cart.component";
 import { MenuItemComponent } from "./menu-item/menu-item.component";
 import { ReviewsComponent } from "./restaurant-detail/reviews/reviews.component";
 import { ShoppingCartService } from "./shopping-cart/shopping-cart.services";
-import { OrderComponent } from './order/order.component';
+import { OrderComponent } from "./order/order.component";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,12 @@ import { OrderComponent } from './order/order.component';
     ReviewsComponent,
     OrderComponent
   ],
-  imports: [BrowserModule, HttpModule, RouterModule.forRoot(ROUTES)],
+  imports: [
+    BrowserModule,
+    HttpModule,
+    FormsModule,
+    RouterModule.forRoot(ROUTES)
+  ],
   providers: [
     RestaurantsService,
     ShoppingCartService,
