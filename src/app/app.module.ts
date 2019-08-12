@@ -17,6 +17,7 @@ import { ShoppingCartComponent } from "./shopping-cart/shopping-cart.component";
 import { MenuItemComponent } from "./menu-item/menu-item.component";
 import { ReviewsComponent } from "./restaurant-detail/reviews/reviews.component";
 import { ShoppingCartService } from "./shopping-cart/shopping-cart.services";
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ShoppingCartService } from "./shopping-cart/shopping-cart.services";
     MenuComponent,
     ShoppingCartComponent,
     MenuItemComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OrderComponent
   ],
   imports: [BrowserModule, HttpModule, RouterModule.forRoot(ROUTES)],
   providers: [
