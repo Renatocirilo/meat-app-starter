@@ -29,7 +29,9 @@
               class="form-control"
               name="address"
               ngModel
+              required
               placeholder="Endereço"
+              autocomplete="off"
             />
             <span class="help-block"></span>
           </div>
@@ -44,7 +46,10 @@
               class="form-control"
               name="number"
               ngModel
+              required
+              minlength="5"
               placeholder="Número"
+              autocomplete="off"
             />
             <span class="help-block"><i class="fa fa-check"></i> Ok</span>
           </div>
@@ -205,7 +210,10 @@
 
     <div class="row">
       <div class="col-xs-12">
-        <a href="order-summary.html" class="btn btn-success pull-right"
+        <a
+          href="order-summary.html"
+          class="btn btn-success pull-right"
+          [disable]="!form.valid"
           ><i class="fa fa-credit-card"></i> Concluir Pedido
         </a>
       </div>
