@@ -7,7 +7,7 @@ import { RadioOption } from "app/shared/radio/radio-option.model";
 })
 export class OrderComponent implements OnInit {
 
-  paymentOption: RadioOption[] = [
+  paymentOptions: RadioOption[] = [
     {label: 'Dinheiro', value: "MON"},
     {label: 'Cartão de Credito', value: "DEB"},
     {label: 'Cartão Refeição', value: "REF"}
