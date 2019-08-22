@@ -1,8 +1,8 @@
-import { CarItem } from "./cart-item.model";
-import { MenuItem } from "app/menu-item/menu-item.model";
+import { CartItem } from "./cart-item.model";
+import { MenuItem } from "app/restaurant-detail/menu-item/menu-item.model";
 
 export class ShoppingCartService {
-  items: CarItem[] = [];
+  items: CartItem[] = [];
 
   clear() {
     this.items = [];
@@ -13,11 +13,11 @@ export class ShoppingCartService {
     if (foundItem) {
       foundItem.quantity = foundItem.quantity + 1;
     } else {
-      this.items.push(new CarItem(item));
+      this.items.push(new CartItem(item));
     }
   }
 
-  removeItem(item: CarItem) {
+  removeItem(item: CartItem) {
     this.items.splice(this.items.indexOf(item), 1);
   }
 
