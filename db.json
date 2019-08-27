@@ -370,5 +370,23 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Rua Galileia",
+      "number": "18",
+      "optionalAddress": "05",
+      "paymentOptions": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
