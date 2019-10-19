@@ -18,6 +18,7 @@ var options = {
 https.createServer(options, server).listen(3001, function () {
     console.log('JSON Server is running on https://localhost:3001');
 });
+
 /*
     To monitor changes made to server.ts,
     we can access the backend via terminal and use the tsc -w command,

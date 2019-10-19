@@ -30,4 +30,7 @@ https.createServer(options, server).listen(3001, () => {
     we can access the backend via terminal and use the tsc -w command,
     if the dist folder does not create automatically,
     we must update typescript (npm install typescript)
+
+    We use the json-server typicode routes component
+    https://github.com/typicode/json-server
 */
